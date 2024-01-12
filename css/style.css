@@ -105,17 +105,24 @@ section{
     max-width: 44rem;
 }
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 5.0rem;
     font-weight: 700;
     line-height: .3;
+    margin-bottom: .5rem;
+    
 }
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
+    margin-top: 1.3rem;
     margin-bottom: .3rem;
+    
+}
+.home-content .name{
+    color: var(--main-color);
 }
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 2.6rem;
 }
 .home-content .social-media a{
     display: inline-flex;
