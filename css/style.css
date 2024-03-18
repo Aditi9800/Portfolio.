@@ -12,7 +12,7 @@ font-family: 'Yuji Hentaigana Akari', cursive;
 
 }
 :root {
-    --bg-color: #fdfdfd;
+    --bg-color: #f9eefe;
     --text-color: #333;
     --main-color: #754ef9;
     --white-color: #fdfdfd;
@@ -128,13 +128,13 @@ section{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     box-shadow: 0 .2ren .5rem var(--shadow-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--main-color);
     margin: .5rem 1.5rem 3rem 0;
 }
@@ -172,6 +172,35 @@ section{
     overflow: hidden;
     pointer-events: none;
 }
+
+
+
+/* Add this to your CSS file */
+
+.profession-container .profession {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.profession{
+    width:300px;
+    height: 100px;
+    
+}
+
+
+
+
 .home .profession-container .profession-box{
     position: absolute;
     top: 0;
