@@ -5,11 +5,10 @@
     text-decoration: none;
     outline: none;
     scroll-behavior: smooth;
-  /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Quicksand', sans-serif;
     /* font-family: 'Yuji Hentaigana Akari', cursive; */
-
 
 }
 :root {
@@ -304,6 +303,8 @@ span{
 .services{
     min-height: auto;
     padding-bottom: 7rem ;
+    margin-top:0 ;
+    padding-top: 50px;
 }
 .services h2{
     margin-bottom: 5 rem;
@@ -327,6 +328,7 @@ span{
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5 ease;
+    height: 400px;
 }
 
 .services-container .services-box:hover{
@@ -396,7 +398,6 @@ span{
     justify-content: center;
     opacity: 0;
     transition: .5s ease;
-    height: 400px;
 
 }
 .portfolio-box:hover .portfolio-layer{
@@ -489,3 +490,48 @@ span{
     font-size: 2.4rem;
     color:#333;
 }
+/* Add this to your CSS file */
+/* Add this to your CSS file */
+
+.skills {
+    min-height: 100vh;
+    /* padding: 10rem 7% 2rem; */
+    padding-top:0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .skills .heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+    transition: 0.3s;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+  }
+  
+  .skill p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+  }
+  
