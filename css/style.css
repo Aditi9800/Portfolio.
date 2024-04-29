@@ -200,7 +200,19 @@ section{
     
 }
 
-
+  /* @media screen and (max-width: 922px) {
+  .overlay{
+    display: none;
+  }
+} */
+  @media screen and (max-width: 1254px) {
+  /* .circle{
+        display: none;
+  } */
+  .profession-container{
+        display: none;
+  }
+}
 
 
 .home .profession-container .profession-box{
