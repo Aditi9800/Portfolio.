@@ -37,3 +37,33 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+
+
+const nameElement = document.getElementById('name');
+const namee = "Sahu.";
+
+let index = 0;
+
+function showNextLetter() {
+  if (index < namee.length) {
+    nameElement.textContent += namee[index];
+    index++;
+    setTimeout(showNextLetter, 600); // Adjust the delay as needed
+  } else {
+    // Reset index back to 0
+    index = 0;
+    nameElement.textContent = "";
+    setTimeout(showNextLetter, 600); // Adjust the delay as needed
+  }
+}
+
+showNextLetter();
