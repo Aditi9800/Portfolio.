@@ -251,7 +251,7 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-    .img_girl img{
+ .img_girl img {
         display: none;
        }
   .Navbar__Items,
