@@ -12,30 +12,37 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header Navbar">
       <a href="" class="logo">Portfolio.</a>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Achievements</a>
-        <a href="#projects">Projects</a>
-        <!-- <a href="#contact">Contact</a> -->
+      <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="navbar Navbar__Items Navbar__Items--right">
         
+        <a href="#home" class="active Navbar__Link">Home</a>
+        <a href="#about" class="Navbar__Link">About</a>
+        <a href="#skills" class="Navbar__Link">Skills</a>
+        <a href="#services" class="Navbar__Link">Achievements</a>
+        <a href="#projects" class="Navbar__Link">Projects</a>
       </nav>
+
       <!-- <div class="bx bx-moon" id="darkMode-icon"></div> -->
     </header>
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hi,</h3>
-        
-        <h1>I'm <span class="name"> Aditi</span></h1>
+
+        <h1 >I'm <span class="name">Aditi</span> <span class="name" id="name"></span> </h1>
         <p>A Web Developer And Programmer.</p>
         <div class="social-media">
           <a href="https://www.linkedin.com/in/aditi-sahu9800/"
@@ -54,6 +61,9 @@
           class="btn"
           >Resume</a
         >
+      </div>
+      <div class="img_girl">
+        <img src="girl.jpg" alt="">
       </div>
       <div class="profession-container">
         <div class="profession-box">
@@ -80,8 +90,6 @@
       </div>
     </section>
 
-   
-
     <section class="about" id="about">
       <div class="about-img">
         <img src="images/a.jpeg" alt="" />
@@ -89,16 +97,33 @@
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <!-- <h3>Hello there,</h3> -->
-        <p>MERN Stack Developer | Codechef 3⭐| Competitive Programmer | Web Developer @NCS | Open-Source Contributor </p>
-        <p>Proficiency in developing backend systems that are scalable and resilient, encompassing APIs, databases, and server-side logic.</p>
-         <span id="dots">...</span>
-          <span id="more" >
-            <p>
-              I'm a passionate web developer and competitive programmer, currently in my final year pursuing Computer Science Engineering at JSS Academy Of Technical Education, Noida. I am deeply motivated by the opportunity to solve real-world challenges through technology.</p>
-    
-          <p>Being a tech enthusiast, I am fully immersed in the realm of Web Development. I find my greatest satisfaction in crafting applications and overcoming hurdles, particularly when collaborating with fellow enthusiasts who share the same drive for problem-solving. My academic journey has provided me with a solid foundation in Competitive Programming and Web Development.</p>
-      </span>
-        <button class="btn" id="myBtn" onclick="myFunction()" >Read More</button>
+        <p>
+          MERN Stack Developer | Codechef 3⭐| Competitive Programmer | Web
+          Developer @NCS | Open-Source Contributor
+        </p>
+        <p>
+          Proficiency in developing backend systems that are scalable and
+          resilient, encompassing APIs, databases, and server-side logic.
+        </p>
+        <span id="dots">...</span>
+        <span id="more">
+          <p>
+            I'm a passionate web developer and competitive programmer, currently
+            in my final year pursuing Computer Science Engineering at JSS
+            Academy Of Technical Education, Noida. I am deeply motivated by the
+            opportunity to solve real-world challenges through technology.
+          </p>
+
+          <p>
+            Being a tech enthusiast, I am fully immersed in the realm of Web
+            Development. I find my greatest satisfaction in crafting
+            applications and overcoming hurdles, particularly when collaborating
+            with fellow enthusiasts who share the same drive for
+            problem-solving. My academic journey has provided me with a solid
+            foundation in Competitive Programming and Web Development.
+          </p>
+        </span>
+        <button class="btn" id="myBtn" onclick="myFunction()">Read More</button>
       </div>
     </section>
 
@@ -127,11 +152,13 @@
         </div>
         <div class="skill">
           <h3>Additional Skills</h3>
-          <p>Restful APIs, Data Structures and Algorithms, Object-Oriented Programming (OOPs), Open Source Contributions and Problem Solving</p>
+          <p>
+            Restful APIs, Data Structures and Algorithms, Object-Oriented
+            Programming (OOPs), Open Source Contributions and Problem Solving
+          </p>
         </div>
       </div>
     </section>
-    
 
     <section class="services" id="services">
       <h2 class="heading">My <span>Achievements</span></h2>
@@ -150,22 +177,24 @@
           <i class="bx bx-code-alt"></i>
           <h3>Tally CodeBrewers 2023 Hackathon.</h3>
           <p>
-            Successfully led a team of three to qualify in the Tally CodeBrewers 2023 Hackathon.
+            Successfully led a team of three to qualify in the Tally CodeBrewers
+            2023 Hackathon.
           </p>
-         
         </div>
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>Codechef</h3>
-          <p>Attained a global rank of 452 in Starters 101 Division 3 on Codechef (2023)</p>
+          <p>
+            Attained a global rank of 452 in Starters 101 Division 3 on Codechef
+            (2023)
+          </p>
         </div>
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
-          <h3>LeetCode </h3>
+          <h3>LeetCode</h3>
           <p>Ranked 2929th in Weekly Contest 349 of LeetCode.</p>
         </div>
-       
-       
+
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
           <h3>GfG</h3>
@@ -181,33 +210,38 @@
       <div class="services-container">
         <div class="services-box">
           <!-- <i class="bx bx-code-alt"></i> -->
-          <h3>MedEasy</h3> <a href="https://medeasy-aixe.onrender.com/"
-          ><i class="bx bx-link-external"></i
-        ></a>
+          <h3>MedEasy</h3>
+          <a href="https://medeasy-aixe.onrender.com/"
+            ><i class="bx bx-link-external"></i
+          ></a>
           <p>
-             The focus of this project is to reduce the amount of medicine
-            wasted and being used to the needy people.
+            The focus of this project is to reduce the amount of medicine wasted
+            and being used to the needy people.
           </p>
           <p>Role: Participated in the team as a Backend Developer</p>
           <p>Technology Used: HTML/ CSS/ JS/ MongoDB/ NodeJS</p>
-         
         </div>
         <div class="services-box">
           <!-- <i class="bx bx-code-alt"></i> -->
-          <h3>TypeChamp</h3> <a href="https://typechamp.netlify.app/"><i class="bx bx-link-external"></i></a>
-     
+          <h3>TypeChamp</h3>
+          <a href="https://typechamp.netlify.app/"
+            ><i class="bx bx-link-external"></i
+          ></a>
+
           <p>
             Developed a web application that focused on evaluating and
             monitoring user typing speed, inclusive of features such as a
             leaderboard and authentication.
           </p>
           <p>Technology Used :HTML/ CSS/ JS/ReactJS/ MongoDB/ NodeJS</p>
-          <p>Displayed leadership skills by promptly solving challenges, in a project team of 3 members.</p>
-               </div>
+          <p>
+            Displayed leadership skills by promptly solving challenges, in a
+            project team of 3 members.
+          </p>
+        </div>
       </div>
     </section>
 
- 
     <section class="contact" id="contact">
       <h2 class="heading">Conatct <span>Me!</span></h2>
       <form action="">
@@ -232,10 +266,17 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Get in touch or send me an email directly on aditisahu9800@gmail.com</p>
-        <span> <a href="https://www.linkedin.com/in/aditi-sahu9800/"><img src="linkedin.png" alt=""></a></span>
-          <span><a href="https://github.com/Aditi9800/"><img src="github.png" alt=""></a></span>
-       
+        <p>
+          Get in touch or send me an email directly on aditisahu9800@gmail.com
+        </p>
+        <span>
+          <a href="https://www.linkedin.com/in/aditi-sahu9800/"
+            ><img src="linkedin.png" alt="" /></a
+        ></span>
+        <span
+          ><a href="https://github.com/Aditi9800/"
+            ><img src="github.png" alt="" /></a
+        ></span>
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
