@@ -49,7 +49,7 @@ document.querySelector('.Navbar__Link-toggle')
 
 
 const nameElement = document.getElementById('name');
-const namee = "Sahu.";
+const namee = "A Web Developer And Programmer.";
 
 let index = 0;
 
@@ -57,12 +57,12 @@ function showNextLetter() {
   if (index < namee.length) {
     nameElement.textContent += namee[index];
     index++;
-    setTimeout(showNextLetter, 600); // Adjust the delay as needed
+    setTimeout(showNextLetter, 100); // Adjust the delay as needed
   } else {
     // Reset index back to 0
     index = 0;
     nameElement.textContent = "";
-    setTimeout(showNextLetter, 600); // Adjust the delay as needed
+    setTimeout(showNextLetter, 100); // Adjust the delay as needed
   }
 }
 
